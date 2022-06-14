@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: devhojaeleeazuredevops 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devhojaeleeazuredevops
+  template:
+    metadata:
+      labels:
+        app: devhojaeleeazuredevops 
+    spec:
+      containers:
+        - name: devhojaeleeazuredevops 
+          image: hjregistry0.azurecr.io/devhojaeleeazuredevops
+          ports:
+          - containerPort: 80
