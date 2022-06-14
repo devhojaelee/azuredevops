@@ -26,7 +26,7 @@ spec:
       volumes:
       - name: volume
         persistentVolumeClaim:
-          claimName: sprintpvc
+          claimName: pvctest000
 
 ---
 
