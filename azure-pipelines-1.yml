@@ -1,4 +1,14 @@
 # Docker
+- task: Kubernetes@1
+  inputs:
+    connectionType: 'Kubernetes Service Connection'
+    kubernetesServiceEndpoint: 'devops-aks-dev'
+    namespace: 'dev'
+    command: 'apply'
+    useConfigurationFile: true
+    configuration: '$(Build.SourcesDirectory)/sprint/Dev-Image/Dockerfile.yml'
+    secretType: 'dockerRegistry'
+    containerRegistryType: 'Azure Container Registry'
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
