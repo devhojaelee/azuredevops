@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: sprint-dev
-        image: k8sk8stest.azurecr.io/sprintdev:11
+        image: hjregistry0.azurecr.io/sprintdev:11
         ports:
         - containerPort: 80
           protocol: TCP
